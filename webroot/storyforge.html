@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryForge</title>
+    <link rel="stylesheet" href="storyforge.css">
+</head>
+<body>
+    <div id="app">
+        <div class="story-container">
+            <h1>StoryForge Story</h1>
+            <div id="story-content"></div>
+            <div id="word-input">
+                <input type="text" id="new-word" placeholder="Add a word...">
+                <button onclick="submitWord()">Add</button>
+            </div>
+        </div>
+        
+        <div class="puzzle-container">
+            <h2>Story Puzzle</h2>
+            <div id="puzzle-content"></div>
+            <div id="puzzle-input">
+                <input type="text" id="puzzle-answer" placeholder="Your answer...">
+                <button onclick="submitPuzzleAnswer()">Submit</button>
+            </div>
+        </div>
+        
+        <div class="voting-container">
+            <h2>Story Direction</h2>
+            <div id="voting-options"></div>
+        </div>
+    </div>
+    <script src="storyforge.js"></script>
+</body>
+</html>
